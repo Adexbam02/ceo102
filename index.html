@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEOSTATUSVIEW</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="signUp.css">
+    <link rel="stylesheet" href="plans.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="Terms.html">
+
+    <!-- ICONSCOUT  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <link rel="icon" type="image/png" href="./assets/ceoWhite.png">
+</head>
+
+<body>
+        <!-- ==================== NAVBAR ==================== -->
+        <nav>
+            <div class="navBar">
+                <div class="logo">
+                    <a href="index.html"><img src="./assets/ceoWhite.png" alt=""></a>
+                </div>
+
+                <ul class="mainLink">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#plans">Plan</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="Terms.html">Terms</a></li>
+                </ul>
+
+                <button id="open-menu-button"><i class="uil uil-list-ul"></i></button>
+                <button id="close-menu-button"><i class="uil uil-multiply"></i></button>
+            </div>
+        </nav>
+
+
+        <!-- ==================== HERO SECTION ==================== -->
+        <section class="hero" id="hero">
+            <!-- =============== SIGNUP =============== -->
+            <div class="popup" id="popup">
+                <div class="container">
+                    <div class="signLeft">
+                        <h3>Submit Your Details</h3>
+
+                        <!-- PACKAGES -->
+                        <select id="packages" name="packages" class="packages">
+                            <option value="free">Free Package</option>
+                            <option value="premium">Premium Package</option>
+                        </select>
+
+                        <form action="https://formspree.io/f/xknavqqz" method="POST" class="signupForm"
+                            /*target="_blank" * />
+                        <div class="formName">
+                            <input type="text" name="FullName" class="fullName" placeholder="Fullname" required>
+                        </div>
+
+                        <div class="numEmail">
+                            <span>
+                                <!-- COUNTRY CODE -->
+                                <select id="countryCode" name="countryCode" class="countryCode">
+                                    <option value="1">+1</option> 
+                                    <option value="2">+2</option>
+                                </select>
+                                <!-- MOBILE NUMBER -->
+                                <input type="number" class="number" maxlength="15" pattern="\d{1,15}" name="Nubmer" placeholder="80 0000 0000" required>
+                            </span>
+                            <!-- EMAIL -->
+                            <input type="email" name="Email Address" placeholder="Your Email">
+                        </div>
+
+                        <!-- CHECKBOX -->
+                        <label>
+                            <input type="checkbox" name="agree" value="yes" required>
+                            <a href="Terms.html">I agree to the terms and conditions</a>
+                        </label>
+
+                        <button type="submit" class="btn btn-primary" >Submit</button>
+                    </div>
+
+                    <div class="signRight">
+                        <button id="clSignup" onclick="closePopup()"><i class="uil uil-multiply"></i></button>
+                        <img src="./assets/rocket.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <!-- =================== END SIGNUP ================ -->
+            <div class="container">
+                <div class="right">
+                    <h2>Do You Need More Viewers For Your WhatsApp Status?</h2>
+
+                    <div>
+                        <button type="button" class="btn" onclick="openPopup()">TRY NOW</button>
+                        <button type="button" class="btn">Download</button>
+                    </div>
+                </div>
+
+                <div class="left">
+                    <div class="container">
+                        <img src="./assets/BASE.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ==================== SECOND HERO ==================== -->
+        <div class="secondHero">
+            <div>
+                <h2>Our Projects & <br> Testimonials</h2>
+                <div class="post">
+                    <!-- SWIPER.JS -->
+                    <div class="left">
+                        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true"
+                            navigation="false" space-between="30" centered-slides="true" autoplay-delay="3500"
+                            autoplay-disable-on-interaction="false">
+                            <swiper-slide><img src="./assets/1.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="./assets/76.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="./assets/88.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="./assets/86.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="./assets/89.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="./assets/84.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="./assets/80.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="./assets/85b.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="./assets/100.jpg" alt=""></swiper-slide>
+                        </swiper-container>
+
+                    </div>
+                    <!-- TESTIMONIAL -->
+                    <div class="right">
+                        <div class="testimonialCont">
+                            <article>
+                                <div class="testimonial">
+                                    <div class="profilePic">
+                                        <img src="./assets/avatar1.jpg" alt="">
+                                    </div>
+
+                                    <!-- <h4>Alina <br> Gomez</h4> -->
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, architecto
+                                            quasi iusto, aliquid dolores </p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article>
+                                <div class="testimonial">
+                                    <div class="profilePic">
+                                        <img src="./assets/avatar2.jpg" alt="">
+                                    </div>
+
+                                    <!-- <h4>Alina <br> Gomez</h4> -->
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, architecto
+                                            quasi iusto, aliquid dolores </p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article>
+                                <div class="testimonial">
+                                    <div class="profilePic">
+                                        <img src="./assets/avatar3.jpg" alt="">
+                                    </div>
+
+                                    <!-- <h4>Alina <br> Gomez</h4> -->
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, architecto
+                                            quasi iusto, aliquid dolores </p>
+                                    </div>
+
+                                </div>
+                            </article>
+
+                            <article>
+                                <div class="testimonial">
+                                    <div class="profilePic">
+                                        <img src="./assets/avatar4.jpg" alt="">
+                                    </div>
+
+                                    <!-- <h4>Alina <br> Gomez</h4> -->
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, architecto
+                                            quasi iusto, aliquid dolores </p>
+                                    </div>
+
+                                </div>
+                            </article>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ==================== PROCEDURE ==================== -->
+        <section class="procedure">
+            <div class="container">
+                <h2>Procedure</h2>
+                <div>
+                    <article>
+                        <span><i class="uil uil-file"></i></span>
+                        <h3>Select a Plan</h3>
+                        <p>Choose between the free pakage and the premium pakage
+                            according to what best suits your needs.
+                            Remember that the premium plan has more to offer.
+                        </p>
+                    </article>
+
+                    <article>
+                        <span><i class="uil uil-document-info"></i></i></span>
+                        <h3>Fill Correct info</h3>
+                        <p>Fill in your correct information when submitting your contact
+                            information to ensure that you get the best out of our
+                            services.
+                        </p>
+                    </article>
+
+                    <article>
+                        <span><i class="uil uil-shield-exclamation"></i></i></span>
+                        <h3>Secure Password</h3>
+                        <p>After your successful payment, you will be given a unique
+                            password which will be required to download the contact file.
+                        </p>
+                    </article>
+
+                    <article>
+                        <span><i class="uil uil-download-alt"></i></i></span>
+                        <h3>Download Contact</h3>
+                        <p>Come back to Download and install the contact file
+                            which will be uploaded once it reaches 250 Contacts in a
+                            .vcf format. This contact file will also be saved by others.
+                        </p>
+                    </article>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- ==================== PLANS ==================== -->
+        <div class="plans" id="plans">
+            <div class="plansContainer">
+                <div class="container">
+                    <div class="heading">
+                        <h2>Flexible Plans</h2>
+                        <h3>Choose the plan that best work for you!</h3>
+                    </div>
+                    
+                    <div class="content">
+                        <article>
+                            <div class="top">
+                                <div class="image"><img src="./assets/basic.png" alt=""></div>
+                                <span>
+                                    <h3>Basic</h3>
+                                    <h4>Free <small>/lifetime</small></h4>
+                                </span>
+                            </div>
+                            <div class="middle">
+                                <span>
+                                    <i class="uil uil-check-circle"></i>
+                                    <p>Only 250 contacts are available to enjoy.</p>
+                                </span>
+                                <span>
+                                    <i class="uil uil-check-circle"></i>
+                                    <p>For Personal Use</p>
+                                </span>
+                                <span>
+                                    <i class="uil uil-check-circle"></i>
+                                    <p>100% Free</p>
+                                </span>
+                                <span>
+                                    <i class="uil uil-check-circle"></i>
+                                    <p>Contacts are automatically saved with a "CEO" prefix.</p>
+                                </span>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="top">
+                                <div class="image"><img src="./assets/premium.png" alt=""></div>
+                                <span>
+                                    <h3>Premium</h3>
+                                    <h4>N1000<small>/lifetime</small></h4>
+                                </span>
+                            </div>
+                            <div class="middle">
+                                <span>
+                                    <i class="uil uil-check-circle"></i>
+                                    <p>There are 1000+ to unlimited contacts available.</p>
+                                </span>
+                                <span>
+                                    <i class="uil uil-check-circle"></i>
+                                    <p>For Businesses, WhatsApp Medias or TVs, Brands, Personalities etc.</p>
+                                </span>
+                                <span>
+                                    <i class="uil uil-check-circle"></i>
+                                    <p>You must pay N1000 token.</p>
+                                </span>
+                                <span>
+                                    <i class="uil uil-check-circle"></i>
+                                    <p>Contacts are automatically saved with a "CEO" prefix.</p>
+                                </span>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="top">
+                                <div class="image"><img src="./assets/Coming Soon.png" alt=""></div>
+                                <span>
+                                    <h3>Coming Soon</h3>
+                                    <h4>Coming <small>/Soon</small></h4>
+                                </span>
+                            </div>
+                            <div class="middle">
+                                <h1>COMING SOON</h1>
+                        </article>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+
+    <!-- </div> -->
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="container">
+            <div class="left">
+                <a href="index.html"><img src="./assets/ceoWhite.png" alt=""></a>
+
+
+                <div class="social">
+                    <a href="https://web.facebook.com/TheCEOstatusViews" target="_blank"><i
+                            class="uil uil-facebook"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="uil uil-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="uil uil-instagram-alt"></i></a>
+                    <a href="https://youtu.be/A6jiKc00su4""><i class="uil uil-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="middle">
+                <h2>Support</h2>
+                <a href="#">FAQs</a>
+            </div>
+
+            <div class="right">
+                <h2>Navigate</h2>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Download</a>
+                <a href="#">Procedure</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+</body>
+
+</html>

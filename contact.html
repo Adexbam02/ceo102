@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="mediaquery.css"> -->
+
+    <!-- ICONSCOUT  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="navBar">
+            <div class="logo">
+                <a href="index.html"><img src="./assets/ceoWhite.png" alt=""></a>
+            </div>
+
+            <ul class="mainLink">
+                <li><a href="index.html" id="clickk" onclick="clickk()">Home</a></li>
+                <li><a href="index.html#plans">Plan</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="Terms.html">Terms</a></li>
+            </ul>
+
+            <!-- FORMERLY SIDELINK -->
+
+            <button id="open-menu-button"><i class="uil uil-list-ul"></i></button>
+            <button id="close-menu-button"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+
+    <section class="contact">
+        <div class="contact__container">
+            <aside class="contact__aside">
+                <h2>Contact Us</h2>
+                <p>
+                    If you think any CEO contact has acted badly and you want us to look into it,
+                    kindly submit their phone number here or email:
+                    info@ceowhatsappstatus.com
+                </p>
+                <ul class="contact__details">
+                    <li>
+                        <i class="uil uil-whatsapp"></i>
+                        <h5>+234 907 389 0957</h5>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-envelope"></i>
+                        <h5>info@ceowhatsappstatus.com</h5>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-location-point"></i>
+                        <h5>Oyo State, Nigeria</h5>
+                    </li>
+                </ul>
+
+            </aside>
+
+            <form action="https://formspree.io/f/xknaoapp" method="POST" class="contact__form">
+                <div class="form__name">
+                    <input type="text" name="Name" placeholder="Name(optional)">
+                    <input type="number" name="number" placeholder="Person's Number" required>
+
+                </div>
+                <textarea name="Message" rows="7" placeholder="Reason for reporting Contact?" required></textarea>
+                <button type="submit" class="btn btn-primary">SUBMIT</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="left">
+                <a href="index.html"><img src="./assets/ceoWhite.png" alt=""></a>
+
+
+                <div class="social">
+                    <a href="https://web.facebook.com/TheCEOstatusViews" target="_blank"><i
+                            class="uil uil-facebook"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="uil uil-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="uil uil-instagram-alt"></i></a>
+                    <a href="https://youtu.be/A6jiKc00su4""><i class="uil uil-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="middle">
+                <h2>Support</h2>
+                <a href="#">FAQs</a>
+            </div>
+
+            <div class="right">
+                <h2>Navigate</h2>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Download</a>
+                <a href="#">Procedure</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
